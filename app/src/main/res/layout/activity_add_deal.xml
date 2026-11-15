@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:fitsSystemWindows="true"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/toolbar" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey_5"
+        android:clipToPadding="false"
+        android:padding="@dimen/spacing_mlarge"
+        android:scrollbars="none"
+        android:scrollingCache="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+<!--            <EditText-->
+<!--                style="@style/EditText.Flat.Grey"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="45dp"-->
+<!--                android:background="@drawable/edit_text_round_bg_white"-->
+<!--                android:hint="Name"-->
+<!--                android:id="@+id/nameEditText"-->
+<!--                android:minHeight="45dp"-->
+<!--                android:paddingLeft="@dimen/spacing_middle"-->
+<!--                android:paddingRight="@dimen/spacing_middle" />-->
+
+            <EditText
+                android:id="@+id/accountEditText"
+                style="@style/EditText.Flat.Grey"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="@dimen/spacing_large"
+                android:background="@drawable/edit_text_round_bg_white"
+                android:editable="false"
+                android:focusable="false"
+                android:hint="Account"
+                android:paddingLeft="@dimen/spacing_middle" />
+            <!--                android:drawableEnd="@drawable/ic_expand_arrow"-->
+            <!--                android:drawableRight="@drawable/ic_expand_arrow"-->
+            <!--               -->
+
+            <EditText
+                android:id="@+id/productEditText"
+                style="@style/EditText.Flat.Grey"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="@dimen/spacing_large"
+                android:background="@drawable/edit_text_round_bg_white"
+                android:drawableEnd="@drawable/ic_expand_arrow"
+                android:drawableRight="@drawable/ic_expand_arrow"
+                android:editable="false"
+                android:focusable="false"
+                android:hint="Product"
+                android:paddingLeft="@dimen/spacing_middle" />
+
+            <EditText
+                style="@style/EditText.Flat.Grey"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="@dimen/spacing_large"
+                android:background="@drawable/edit_text_round_bg_white"
+                android:hint="Amount"
+                android:id="@+id/amountEditText"
+                android:minHeight="45dp"
+                android:paddingLeft="@dimen/spacing_middle"
+                android:paddingRight="@dimen/spacing_middle" />
+
+
+
+<!--            <EditText-->
+<!--                android:id="@+id/statusEditText"-->
+<!--                style="@style/EditText.Flat.Grey"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="45dp"-->
+<!--                android:layout_marginTop="@dimen/spacing_large"-->
+<!--                android:background="@drawable/edit_text_round_bg_white"-->
+<!--                android:drawableEnd="@drawable/ic_expand_arrow"-->
+<!--                android:drawableRight="@drawable/ic_expand_arrow"-->
+<!--                android:editable="false"-->
+<!--                android:focusable="false"-->
+<!--                android:hint="Status"-->
+<!--                android:paddingLeft="@dimen/spacing_middle" />-->
+
+
+
+            <Button
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginLeft="-4dp"
+                android:layout_marginRight="-4dp"
+                android:layout_marginTop="@dimen/spacing_large"
+                android:background="@drawable/btn_rect_red"
+                android:text="SUBMIT"
+                android:id="@+id/submitButton"
+                android:textAllCaps="false"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>
+
