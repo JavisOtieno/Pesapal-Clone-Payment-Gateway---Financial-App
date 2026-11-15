@@ -1,6 +1,7 @@
 package com.javy.pesapalclone;
 
 public class Constants {
+    //commit after account compromise
     //http://37.27.82.6/
     //http://testscg.triontechnologyltd.com/
     //when you change the URLs you must manually uninstall app on phone
